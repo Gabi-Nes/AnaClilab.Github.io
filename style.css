@@ -1,0 +1,211 @@
+* {
+    /*margin: 0;
+    padding: 0;
+    font-family: lato;  ver */
+	box-sizing: border-box;
+}
+
+:root {
+    --primary: #13C5DD;
+    --secondary: #354F8E;
+    --light: #EFF5F9;
+    --dark: #1D2A4D;
+    --logo-gris: rgb(137, 136, 134);
+    --logo-verde: rgb(54,169,182);
+    --celeste-ppal: rgb(0, 162, 255);
+}
+
+
+h1{
+    font-size: 2em; 
+    color: rgb(0, 162, 255);
+    text-align: center;
+    vertical-align: auto;
+};
+
+header{
+    background-image: url(img/Fondo0.jpg);
+}
+
+/* --------------  Encabezado SUPERIOR   ------------------------- */
+
+
+.header-top{
+     background-color:rgba(192, 192, 192, 0.8);
+     line-height: 40px;
+     border-bottom-width: thin;
+     border-bottom-style: solid;
+     border-bottom-color:rgb(0, 162, 255);
+     }
+ 
+.header-top p{
+    color:  black; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    float: right;
+    text-decoration: none;
+    }
+
+.header-top a{
+    color:  black; 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    float: right;
+    text-decoration: none;
+    }
+    
+
+header .containerHF{
+     display: flex;
+     align-content: center;
+     justify-content: space-around;
+     font-size: 1.1em;
+    }
+     
+.columna {
+    float: left;
+  }
+
+.icono {
+    max-width: 100%;
+    max-height: 100%;
+    filter: saturate(0);
+    width: 24px;
+    height: 24px;
+  }
+
+
+/* --------------  Encabezado INFERIOR ------------------------- */
+
+.header-bottom{
+    background-color:rgba(192, 192, 192, 0.9);
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(0, 162, 255);
+    margin-top: 0%;
+}
+
+.logo {
+max-width: 100%;
+max-height: 100%;
+width: 24px;
+height: 24px;
+margin-top: 0.2em;
+}
+
+.containerHF-nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.columna-logo a{
+    color: rgb(54, 172, 184);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    float: right;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-top: 0.2em;
+}
+
+/* ----------------------------- */
+
+.columna-bottom a{
+    color: var(--dark);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1em;
+    float: right;
+    text-decoration: none;
+}
+
+.columna-bottom a:hover{
+    height:   1.4em; /* 45px; */
+    line-height: 1.4em; /* 40px; */
+    background: var(--logo-verde);
+    border-radius: 35px;
+    color: var(--dark);
+    border: 1px solid var(--logo-gris);
+}
+
+
+/* ---------------     hero  --------------------    */
+body{
+    background-image: radial-gradient(var(--light), var(--logo-verde), var(--primary));
+    /* background-image: url(img/AnaClilab_Tapiz.jpg);*/
+}
+
+h2 {
+    color: var(--dark);
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 800px; /* 1280 */
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 500%; /* 400%*/
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;} /* */
+	/* 20% {margin-left: 0;}  */
+	
+	20% {margin-left: -100%;}
+	35% {margin-left: -100%;}
+
+	40% {margin-left: -200%;}
+	55% {margin-left: -200%;}
+
+	60% {margin-left: -300%;}
+	75% {margin-left: -300%;} 
+
+	80% {margin-left: -400%;}
+	100% {margin-left: -400%;} 
+
+	/* 25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;} */
+}
+
+	/*  ------------ PIE DE PAGINA --------------- */
+
+footer .containerHF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 999em; */
+    color: var(--dark);
+    background-color: var(--celeste-ppal);
+    border: 3px solid var(--secondary);
+}
+

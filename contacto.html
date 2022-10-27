@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+
+  </head>
+
+  <header>
+    <!-- --------------  Encabezado SUPERIOR   ------------------------- -->
+    <div class="header-top">
+        <div class="containerHF">
+            <div class="columna">  
+                <img class="icono" src="img/ubicacion-trans.gif"> <a href="#"> Juana Manso 2730. C.A.B.A.</a>
+            </div>
+
+            <div class="columna">  
+                <img class="icono" src="img/telefono-trans.gif"> <a href="tel:0800-1234-5678">  0800-1234-5678</a>
+                </div>
+
+            <div class="columna">  
+                <img class="icono" src="img/mensaje-trans.gif"> <a href="mailto:anaclilab@yahoo.com">  anaclilab@yahoo.com</a>
+            </div>
+
+            <div class="columna">
+                <img class="icono" src="img/reloj-trans.gif"> <a>  Lunes a Viernes de 7:00 a 18:00 hs.</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --------------  Encabezado INFERIOR   ------------------------- -->
+
+    <div class="header-bottom">          
+        <div class="containerHF-nav">
+            <div class="columna-logo"> 
+                <img class="logo" src="img/Logo-Trans.png"> <a href="index.html">ANA CLILAB</a>
+            </div>
+
+            <div class="columna-bottom">  
+                <a href="nosotros.html" class="navbar-menu">Nosotros</a>
+            </div>
+
+            <div class="columna-bottom"> 
+                <a href="estudios.html" class="navbar-menu">Estudios</a>
+            </div>
+
+            <div class="columna-bottom"> 
+                <a href="coberturas.html" class="nnavbar-menu">Coberturas</a>
+            </div>
+
+            <div class="columna-bottom"> 
+                <a href="contacto.html" class="navbar-menu">Contacto</a>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+  <body>
+
+    <section>
+      <div>
+        <!-- <h1 id="titulo">Conta<span>ctanos</span></h1> -->
+        <small id="titulo2">Mensaje de exito o error</small>
+      </div>
+    </section>
+    <div class="containerg">
+    <section class="container">
+      <div>
+        <form action="" method="" id="formulario">
+          <div>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido/s"/>
+            <small>Mensaje de error o oks</small>
+          </div>
+          <div>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre/s"/>
+            <small>Mensaje de error o oks</small>
+          </div>
+          <div>
+            <input type="email" id="email" name="correo" placeholder="Correo"/>
+            <small>Mensaje de error o oks</small>
+          </div>
+          <div>
+            <textarea name="comentario" id="comentario" placeholder="Mensaje con máximo de 256 caracteres." cols="50" rows="10"></textarea>
+            <small>Mensaje de error o oks</small>
+          </div>
+          <div id="botones" class="section_btn">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+      </div>
+    </section>
+    <script src="form.js"></script>
+    <section class="container">
+      <div class="titulomap"><h3>¿Dónde estamos?</h3></div>
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.7191057529294!2d-58.3650357421499!3d-34.61770539661003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d0c157badd%3A0xd4f7350655393c3e!2sPuerto%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1665281739383!5m2!1ses-419!2sar"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+  </div>
+  </body>
+
+    <!-- --------------  Pie de página   ------------------------- -->
+    <footer>
+      <div class="containerHF">
+          <p>&copy; MaFaGa 2022 - Todos los derechos reservados - C.A.B.A. - Argentina</p>
+      </div> 
+  </footer>
+
+</html>
